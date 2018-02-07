@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/css/photo.css"/>
+</head>
+<body>
+	<div class="photo">
+			<ul>
+				<li>
+					<a class="po photo-1" href="javascript:void(0)">
+	   						 <div class="zz zzc1">
+	   						 	<h2>2017，我会怀念她的。</h2>
+	   						 </div>
+					</a>
+					<a class="po photo-2" href="javascript:void(0)">
+	   						 <div class="zz zzc2"></div>
+						   <div class="box">
+						   </div>
+					</a>
+					<a class="po photo-3" href="javascript:void(0)">
+	   						 <div class="zz zzc3"></div>
+						   <div class="box">
+						   </div>
+					</a>
+				</li>
+				<li>
+					
+				</li>
+				<li></li>
+				<li></li>
+			</ul>
+	</div>
+	
+</body>
+</html>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	function hg(box,zzc){
+		function inDirection(evt) {
+    //1、拿出鼠标距离四个边的距离
+    //1)、盒子left，top，right，bottom
+    let left= box.offset().left;
+    let top = box.offset().top;
+    let right = left+box.width();
+    let bottom = top+box.height();
+
+    //2)、计算鼠标距离每个边的距离
+    let leftDis =Math.abs(left-evt.pageX);
+    let rightDis =Math.abs(right-evt.pageX);
+    let topDis =Math.abs(top-evt.pageY);
+    let bottomDis =Math.abs(bottom-evt.pageY);
+
+    let obj = {
+        "左":leftDis,
+        "上":topDis,
+        "右":rightDis,
+        "下":bottomDis
+    }
+    let min = obj["左"];
+    let minKey = "左";
+    for(let key in obj){
+        if(obj[key]<min){
+            min = obj[key];
+            minKey = key;
+        }
+    }
+    return minKey;
+}
+
+function leftIn() {
+    zzc.css({"left":-500});
+    zzc.animate({"left":0,"top":0},200);
+}
+
+function rightIn() {
+    zzc.css({"left":500});
+    zzc.animate({"left":0,"top":0},200);
+}
+
+function upIn() {
+    zzc.css({"top":-500});
+    zzc.animate({"left":0,"top":0},200);
+}
+
+function bottomIn() {
+    zzc.css({"top":500});
+    zzc.animate({"left":0,"top":0},200);
+}
+
+function leftOut() {
+    zzc.animate({"left":-500,"top":0},200);
+}
+
+function rightOut() {
+    zzc.animate({"left":500,"top":0},200);
+}
+
+function upOut() {
+    zzc.animate({"left":0,"top":-500},200);
+}
+
+function bottomOut() {
+    zzc.animate({"left":0,"top":500},200);
+}
+
+let inFuncObj ={
+    "左":leftIn,
+    "上":upIn,
+    "右":rightIn,
+    "下":bottomIn
+};
+
+let outFuncObj ={
+    "左":leftOut,
+    "上":upOut,
+    "右":rightOut,
+    "下":bottomOut
+};
+$(function () {
+   box.mouseenter(function (evt) {
+        let direction = inDirection(evt);
+        console.log("从"+direction+"边进入");
+        inFuncObj[direction]();
+    });
+
+    box.mouseleave(function (evt) {
+        let direction = inDirection(evt);
+        console.log("从"+direction+"边出去");
+        outFuncObj[direction]();
+    });
+});
+}
+ $(function(){
+ 		hg($(".photo-1"),$(".zzc1"));
+ 		hg($(".photo-2"),$(".zzc2"));
+ 		hg($(".photo-3"),$(".zzc3"));
+ })
+
+</script>

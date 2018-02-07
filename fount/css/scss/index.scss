@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,hr,h1,h2,h3,h4,h5,h6,img,input{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+body{
+    width: 100%;
+    font-family:"微软雅黑",Arial;
+    
+}
+a{
+    text-decoration:none;
+}
+ul,ol{
+    list-style:none;
+}
+.top{
+    width: 100%;
+    background: url(../../img/index/23049407.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 500px;
+    height: 90%;
+    h1{
+        color: #FFFFFF;
+        margin: 0;
+        line-height: 1;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 400;
+        padding-top: 120px;
+    }
+    a{
+        display: block;
+        font-size: 18px;
+        color: #FFFFFF;
+        margin: 30px  auto 0;
+        border-radius: 3px;
+        text-align: center;
+        line-height:42px;
+        font-weight: 400;
+        width: 160px;
+        height: 42px;
+        background: #0090c3;
+    }
+    .ewm{
+        width: 110px;
+        height: 110px;
+        border: 1px solid #FFFFFF;
+        margin: 30px auto 15px;
+        img{
+            display: block;
+            width:100px;
+            height: 100px;
+            margin: 4px; 
+        }
+    }
+    .xz1{
+        display: block;
+        width: 110px;
+        font-size: 12px;
+        height: 33px;
+        line-height: 33px;
+        margin: 5px auto 0;
+        text-align: center;
+        color: #fff;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+        border: 1px solid black;
+    }
+    .bottm{
+            background: rgba(1,1,1,.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    text-align: center;
+    .bot{
+            position: relative;
+    width: 570px;
+    height: 80px;
+    margin: auto;
+    }
+    .icon{
+            overflow: hidden;
+            width: 161px;
+            float: left;
+            margin-top: 20px;
+            margin-right: 10px;
+        img{
+            background-repeat: no-repeat;
+            -moz-background-size: contain;
+            background-size: contain;
+            height: 22px;
+            width: 151px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        span{
+                font-size: 13px;
+    letter-spacing: 10px;
+    text-align: left;
+    color: #fff;
+        }
+    }
+    .input{
+         width: 388px;
+    height: 38px;
+    margin-top: 21px;
+    float: left;
+    opacity: .7;
+    overflow: hidden;
+    position: relative;
+          input[type=text]{    width: 288px;
+    height: 38px;
+    background-color: #fff;
+    float: left;
+    outline: 0;
+    border: 0;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+          }
+    a{
+    width: 100px;
+    height: 38px;
+    background-color: #c99a05;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    display: block;
+    line-height: 38px;
+    margin: 0;
+    border-radius: 0;
+     }
+    } 
+    }
+}   
+.d2{
+    width: 1200px;
+    margin: 0 auto;
+    .a1{
+        width: 100%;
+        h2{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin: 70px 0 0;
+    line-height: 1;
+    font-weight: 400; 
+        }
+        p{ 
+            width: 100%;
+            text-align: center;
+            margin: 40px 0 70px;
+            line-height: 1;
+        }
+        
+    }
+    .a4{
+        h2{
+                color: #85888a;
+                font-size: 16px;
+                margin: 100px auto 60px;
+                text-align: center;
+        }
+        ul{
+           li{
+                    display: inline-block;
+                    width: 163px;
+                    height: 88px;
+                    margin: 9px;
+                    border: 1px solid #e0e0e0;
+               img{
+                   display: block;
+                   width: 100%;
+                   height: 100%;
+               }
+           } 
+        }
+    }
+}

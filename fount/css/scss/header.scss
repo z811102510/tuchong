@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,hr,h1,h2,h3,h4,h5,h6,img,input{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 100%;
+    font-family:"微软雅黑",Arial;
+}
+a{
+    text-decoration:none;
+}
+ul,ol{
+    list-style:none;
+}
+.h{
+    position: fixed;
+    min-width: 100%;
+    height: 60px;
+    margin: 0 auto; 
+    background-color: rgba(0,0,0,.8);
+    font-weight: 500;
+    z-index: 4;
+   .nav-left{
+    float: left;
+    height: 100%;
+    a{
+        height: 100%;
+    img{
+        display: inline-block;
+        height: 20px;
+        width: 80px;
+        margin: 20px 0;
+    }
+    }
+    .listt{
+        vertical-align: top;
+        line-height: 1;
+        height: 100%;
+        display: inline-block;
+        li{
+            display: inline-block;
+            line-height: 60px;
+            padding: 0 22px;
+            a{
+                font-size: 12px;
+                color: white;
+            }
+        }
+        li:first-child{
+            padding-left: 34px; 
+        }
+        .list{
+            position: relative;
+            ul{
+                display: none;
+                position: absolute;
+                top: 59px;
+                z-index: 1;
+                left: -20px;
+                width: 120px;
+                margin-top: 1px;
+                line-height: 1;
+                text-align: center;
+                li{
+                    position: relative;
+                    background: #222;
+                    color: #FFFFFF;
+                    font-size: 12px;
+                }
+                li:first-child{
+                    margin-top: 10px;
+                }
+            }
+        }
+    } 
+   
+    } 
+    .nav-right{
+        float: right;
+        img{
+          display: inline-block;
+          margin: 20px 0;
+          vertical-align: middle;
+        }
+        input[type=text]{
+            display: inline-block;
+            border: none;
+            background: rgba(0,0,0,0);
+            color: #666;
+            vertical-align: middle;
+            height: 20px;
+        }
+        a{
+            display: inline-block;
+            margin-top: 12px;
+            margin-left: 30px;
+            height: 36px;
+            color: #FFFFFF;
+            font-size: 14px;
+            line-height: 36px;
+        }
+        a:last-child{
+            width: 100px;
+            text-align: center;
+            background: #c99a05;
+        }
+    }
+    .comt{
+        display: inline-block;
+    }
+}
+@media screen and(max-width:1000px){
+  #comt{
+      display: none; 
+  }
+}   
+@media screen and(max-width:650px){
+  .ss{
+      display: none; 
+  }
+} 
